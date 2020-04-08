@@ -14,7 +14,7 @@ def main():
 	projektname = []
 	ansprechpartner = []
 	#READ CSV File
-	with open('currentprojects.csv') as csvDataFile:
+	with open('/Users/jwilhelm/Desktop/jwi-test/py/Ansprechpartner/currentprojects.csv') as csvDataFile:
 		csvReader = csv.reader(csvDataFile, delimiter=';', quotechar='"')
 		for row in csvReader:
 			#print (row)
