@@ -24,12 +24,12 @@ def main():
 			projektname.append(row[2])
 			ansprechpartner.append(row[3])
 
-		t = PrettyTable(['ID',projektnummer[0],kunde[0],projektname[0],ansprechpartner[0]])
+		t = PrettyTable(['ID',kunde[0],projektname[0],ansprechpartner[0],projektnummer[0]])
 		
 		rowcount = (len(projektname))
 		j=1
 		while j <= rowcount-1:
-			t.add_row([j,projektnummer[j],kunde[j],projektname[j],ansprechpartner[j]])
+			t.add_row([j,kunde[j],projektname[j],ansprechpartner[j],projektnummer[j]])
 			j = j+1
 		print(t)
 		
